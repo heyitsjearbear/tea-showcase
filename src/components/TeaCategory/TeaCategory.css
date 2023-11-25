@@ -1,0 +1,34 @@
+.tea-category {
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: box-shadow 0.3s;
+}
+
+.tea-category:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tea-category img {
+  max-width: 100%;  /* Adjusts the width to the parent container */
+  max-height: 200px; /* Sets a maximum height */
+  object-fit: cover; /* Ensures the aspect ratio is maintained without stretching the image */
+}
+
+.tea-category-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.tea-category-info h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.tea-category-info p {
+  font-size: 0.9rem;
+  color: #666;
+}

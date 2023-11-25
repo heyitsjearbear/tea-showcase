@@ -1,0 +1,13 @@
+.tea-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+@media (max-width: 768px) {
+    .tea-list {
+      flex-direction: column;
+      align-items: center;
+    }
+}
