@@ -4,11 +4,13 @@
   overflow: hidden;
   margin: 15px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, transform 0.3s; /* add transform to the transition */
+  transform: scale(1); /* initial size */
 }
 
 .tea-category:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: scale(1.05); /* enlarge on hover */
 }
 
 .tea-category img {
@@ -31,4 +33,30 @@
 .tea-category-info p {
   font-size: 0.9rem;
   color: #666;
+}
+
+.focused-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.focused-card button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.focused-card .tea-category {
+  transform: scale(1.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
