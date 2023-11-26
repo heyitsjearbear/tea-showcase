@@ -28,7 +28,6 @@ const TeaCategory: React.FC<TeaCategoryProps> = ({
         <img src={imageUrl} alt={name} />
         <div className="tea-category-info">
           <h3>{name}</h3>
-          <p>{description}</p>
         </div>
       </div>
       {isClicked && (
